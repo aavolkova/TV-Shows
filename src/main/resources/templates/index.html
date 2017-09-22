@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>TV Show DB - Home Page</title>
+</head>
+<body>
+<h1 th:text="${message}">  Welcome...default page...no other message available</h1>
+
+<p><b><span style="color:DodgerBlue  ;"> In this Application you can save details about TV shows and list them. </span></b></p>
+<br/>
+<p><span style="color:DodgerBlue  ;"> You can search TV shows: </span></p>
+<ul>
+    <li><i><span style="color:DarkViolet ;"> by genre,</span></i></li>
+    <li><i><span style="color:DarkViolet ;"> by duration ,</span></i></li>
+    <li><i><span style="color:DarkViolet ;"> for words in the summary.</span></i></li>
+</ul>
+
+<br/>
+<a href="/entertvshow"> <input type="submit" value="Enter New TV Show"/></a>
+<p></p>
+<a href="/displayall"> <input type="submit" value="Display All TV Shows"/></a>
+
+</body>
+</html>
